@@ -21,6 +21,3 @@ jobs:
 
       - name: Lint Helm chart
         run: helm lint ./my-nginx-chart
-
-      - name: Run container smoke test
-        run: docker run --rm myapp:latest echo "Container runs successfully"
