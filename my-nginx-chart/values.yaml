@@ -158,3 +158,19 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+prometheus:
+  server:
+    retention: "7d"
+    resources:
+      requests:
+        cpu: 100m
+        memory: 128Mi
+grafana:
+  adminUser: admin
+  adminPassword: "Lebron23"   
+  service:
+    type: ClusterIP                 
+  retention: '7d'
+  ingress:
+    enabled: false  
+
